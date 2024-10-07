@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature & Wildlife - Nagpur Tourism</title>
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+     <link rel="stylesheet" href="/nature.css">
+    <!-- Ensure your API Key is correctly added -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+</head>
+<body>
+    <!-- Header section -->
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/heritage.html">Heritage</a></li>
+            <li><a href="nature.html">Nature & Wildlife</a></li>
+            <li><a href="adventure.html">Adventure Activities</a></li>
+           <li><a href="festivals.html">Festivals & Events</a></li>
+            <li><a href="shopping.html">Shopping Destinations</a></li>
+            <li><a href="architecture.html">Architecture & Landmarks</a></li>
+            <li><a href="nightlife.html">Nightlife & Entertainment</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1>Nagpur Tourism</h1>
+            <p>Discover the natural wonders of Nagpur</p>
+        </div>
+    </header>
+
+    <!-- Navigation section -->
+    
+
+    <!-- Main content section -->
+    <main>
+        <section>
+            <h2>Nature & Wildlife</h2>
+            <div class="image-grid">
+                <div class="image-item"> 
+                    <video id="wildlife-video" autoplay muted loop width="100%">
+                        <source src="/images/nature/nature_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="image-item">
+                    <video id="wildlife-video" autoplay muted loop width="100%">
+                        <source src="/images/nature/wildlife_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <!-- Add more images and descriptions -->
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Call to action section -->
+<div id="call-to-action">
+    <h2>Plan Your Trip to Nagpur Today</h2>
+    <p>Experience the beauty and charm of Nagpur. Book your adventure now! Explore our various packages and activities tailored for all ages.</p>
+    <a href="/booktrip.html" class="button">Book Now</a>
+    <p>For more information about Nagpur Tourism, visit our <a href="/nature.html">Nature & Wildlife</a> page.</p>
+</div>
+
+
+    <!-- Local attractions guide section -->
+    <div id="local-attractions">
+        <h2>Local Attractions Guide</h2>
+        <!-- Sections for individual attractions -->
+        <!-- Add more sections as needed -->
+    </div>
+
+    <!-- Google Map section -->
+    
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.73388040391!2d79.11429457510789!3d21.123173280549857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c14f7a10d4d9%3A0x609b84f3a9159c82!2sThe%20Space%20Element!5e0!3m2!1sen!2sin!4v1723449843320!5m2!1sen!2sin" width="1600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+
+    <!-- Additional resources section -->
+    <div id="additional-resources">
+        <h2>Additional Resources</h2>
+        <ul>
+            <li><a href="#">Local Attractions Guide</a></li>
+            <li><a href="#">Travel Tips for Nagpur</a></li>
+            <li><a href="#">Best Time to Visit Nagpur</a></li>
+        </ul>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Nagpur Tourism. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Google Map and video content -->
+    <script>
+        //  function openModal(modalId) {
+        //     document.getElementById(modalId).style.display = "block";
+        //     if (modalId === 'modal-nature1') {
+        //         pannellum.viewer('panorama-nature1', {
+        //             "type": "equirectangular",
+        //             "panorama": "/images/nature/nature_video.mp4",
+        //             "autoLoad": true,
+        //             "autoRotate": -2
+        //         });
+        //     }
+        // }
+        // Initialize Google Map
+        function initMap() {
+            var nagpur = { lat: 21.1458, lng: 79.0882 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: nagpur
+            });
+            var marker = new google.maps.Marker({
+                position: nagpur,
+                map: map,
+                title: 'Nagpur, Maharashtra, India'
+            });
+        }
+
+        // Load Google Maps API script
+        function loadScript() {
+            var script = document.createElement('script');
+            script.src = 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap';
+            script.defer = true;
+            script.async = true;
+            document.head.appendChild(script);
+        }
+
+        // Call loadScript function when the page is loaded
+        window.onload = loadScript;
+
+        // Function to display attraction details
+        function showAttraction(id) {
+            var attractions = document.querySelectorAll('.attraction');
+            attractions.forEach(function (attraction) {
+                attraction.classList.add('hidden');
+            });
+            var selectedAttraction = document.getElementById(id);
+            if (selectedAttraction) {
+                selectedAttraction.classList.remove('hidden');
+                selectedAttraction.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Play wildlife video automatically and loop
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('wildlife-video');
+            video.removeAttribute('controls'); // Remove default controls
+            video.play(); // Autoplay
+            video.addEventListener('ended', function () {
+                video.currentTime = 0;
+                video.play();
+            });
+        });
+    </script>
+</body>
+</html>

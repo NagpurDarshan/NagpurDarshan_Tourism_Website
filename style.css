@@ -1,0 +1,256 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* Navbar Styling */
+.navbar-custom {
+  background-color: #0f0cdd;
+  padding: 10px 0;
+  border-bottom: 1px solid #3498DB;
+}
+.navbar-custom .navbar-brand {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+}
+.navbar-custom .nav-link {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-custom .nav-link:hover {
+  color: #72cfc8;
+}
+.navbar-custom .active {
+  font-weight: bold;
+}
+
+/* Introduction Section */
+.intro {
+  background: url('/images/home/Background.jpg') no-repeat center center;
+  background-size: 100% 90%;
+  color: #100000;
+  padding: 200px 0;
+  text-align: center;
+  height: 100vh;
+}
+.intro h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.intro p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.cta-button {
+  background-color: #0f55eb;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #f9f5f9;
+}
+
+/* Home Page Video */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* Ensure the video container does not exceed the screen width */
+  height: 90vh; /* Set the height to 70% of the viewport height */
+  overflow: hidden; /* Hide any overflow if video exceeds container size */
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%; /* Ensure the video fills the entire height of its container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.video-container video::-webkit-media-controls-timeline,
+.video-container video::-webkit-media-controls-current-time-display,
+.video-container video::-webkit-media-controls-time-remaining-display,
+.video-container video::-webkit-media-controls-play-button,
+.video-container video::-webkit-media-controls-mute-button,
+.video-container video::-webkit-media-controls-fullscreen-button,
+.video-container video::-webkit-media-controls-overflow-button,
+.video-container video::-webkit-media-controls-download-button,
+.video-container video::-webkit-media-controls-rewind-button,
+.video-container video::-webkit-media-controls-toggle-closed-captions-button,
+.video-container video::-webkit-media-controls-toggle-cast-button,
+.video-container video::-webkit-media-controls-volume-slider,
+.video-container video::-webkit-media-controls-seek-back-button,
+.video-container video::-webkit-media-controls-seek-forward-button,
+.video-container video::-webkit-media-controls-scrubber {
+  display: none !important;
+}
+
+/* Remove picture-in-picture controls (Safari specific) */
+.video-container video:-webkit-full-screen-ancestor:not(:-webkit-full-screen) {
+  -webkit-transform: translateZ(0);
+  -webkit-animation: webkit-pseudo-pip-inactive 1s forwards;
+  animation: webkit-pseudo-pip-inactive 1s forwards;
+}
+
+@-webkit-keyframes webkit-pseudo-pip-inactive {
+  to {
+      visibility: hidden;
+  }
+}
+
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1px;
+  /* margin-top: 10px; */
+  margin-left: 0%;
+ 
+}
+.grid-item {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+}
+.grid-item .image-container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+.grid-item .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.grid-item .image-container:hover img {
+  transform: scale(1.1);
+}
+.grid-item .image-container .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.grid-item p {
+  padding: 10px;
+  font-size: 1rem;
+}
+iframe {
+  filter: brightness(0.9); /* Adjust color tone */
+}
+a {
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #f39c12; /* Change the color on hover */
+}
+
+/* Sidebar Styling */
+/* .sidebar {
+  height: 70vh;
+  overflow-y: auto;
+} */
+
+.sidebar {
+  background-color: #52b7df;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 70vh;
+
+}
+.blog-news-section {
+  margin-bottom: 20px;
+}
+.blog-news-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.blog-news-section .list-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.blog-news-section .list-group-item {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+.blog-news-section .list-group-item a {
+  text-decoration: none;
+  color: #2980B9;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.blog-news-section .list-group-item a:hover {
+  color: #1ABC9C;
+}
+.list-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-group-item {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: #2980B9;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.list-group-item a:hover {
+    color: #1ABC9C;
+}
+
+.btn-primary {
+    background-color: #1ABC9C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #16A085;
+}
+
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+

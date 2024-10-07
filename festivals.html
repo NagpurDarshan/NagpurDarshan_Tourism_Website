@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Festive Events in Nagpur - Nagpur Tourism</title>
+    <link rel="stylesheet" href="/festival.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="heritage.html">Heritage</a></li>
+                <li><a href="nature.html">Nature & Wildlife</a></li>
+                <li><a href="adventure.html">Adventure Activities</a></li>
+                <li><a href="festivals.html">Festivals & Events</a></li>
+                <li><a href="shopping.html">Shopping Destinations</a></li>
+                <li><a href="architecture.html">Architecture & Landmarks</a></li>
+                <li><a href="nightlife.html">Nightlife & Entertainment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Cultural Festive Events in Nagpur</h1>
+                <p>Explore the rich cultural tapestry of Nagpur through its vibrant festivals and events.</p>
+            </div>
+        </section>
+
+        <section class="events">
+            <div class="container">
+                <h2>Featured Festivals & Events</h2>
+                <div class="grid-container">
+                    
+                    </div>
+                    <div class="grid-item" data-event="diwali">
+                        <img src="/images/festival/orange_city_craft.webp" alt="Diwali Celebration">
+                        <h3>Diwali</h3>
+                        <p>Experience the spectacular festival of lights with fireworks and cultural performances.</p>
+                        <div class="details">
+                            <p><strong>Date:</strong> November 4, 2024</p>
+                            <p><strong>Location:</strong> Nagpur Riverfront</p>
+                            <p><strong>Activities:</strong> Fireworks, music, dance, traditional rituals</p>
+                            <div id="diwali-countdown" class="countdown"></div> <!-- Countdown Timer -->
+                        </div>
+                    </div>
+                    
+                    </div>
+                    <div class="grid-item" data-event="arts">
+                        <img src="/images/festival/craft_mela.jpeg" alt="Arts and Crafts Festival">
+                        <h3>Navratri</h3>
+                        <p>Celebrate local artisans and their crafts through exhibitions and workshops.</p>
+                        <div class="details">
+                            <p><strong>Date:</strong> March 20-22, 2025</p>
+                            <p><strong>Location:</strong> Nagpur Art Gallery</p>
+                            <p><strong>Activities:</strong> Artisan showcases, workshops, craft sales</p>
+                        </div>
+                    </div>
+                    <!-- Add more grid items with data-event attribute and details -->
+                </div>
+            </div>
+        
+            <section class="events">
+                <div class="container">
+                    <div class="grid-container">
+                        <div class="grid-item" data-event="heritage">
+                            <img src="/images/category/fest.jpeg" alt="Shivjayanti">
+                            <h3>Shivjayanti</h3>
+                            <p>Immerse yourself in Nagpur's heritage with traditional music, dance, and local cuisine.</p>
+                            <div class="details">
+                                <p><strong>Date:</strong> October 15-17, 2024</p>
+                                <p><strong>Location:</strong> Nagpur City Center</p>
+                                <p><strong>Activities:</strong> Cultural performances, food stalls, art exhibitions</p>
+                            </div>
+                        </div>
+                        <div class="grid-item" data-event="diwali">
+                            <img src="/images/category/fest2.jpeg" alt="Ganeshotsav">
+                            <h3>Ganeshotsav</h3>
+                            <p>Experience the spectacular festival of lights with fireworks and cultural performances.</p>
+                            <div class="details">
+                                <p><strong>Date:</strong> November 4, 2024</p>
+                                <p><strong>Location:</strong> Nagpur Riverfront</p>
+                                <p><strong>Activities:</strong> Fireworks, music, dance, traditional rituals</p>
+                            </div>
+                        </div>
+                        <div class="grid-item" data-event="arts">
+                            <img src="/images/category/fest4.jpeg" alt="Gudhipadwa">
+                            <h3>Gudhipadwa</h3>
+                            <p>Celebrate local artisans and their crafts through exhibitions and workshops.</p>
+                            <div class="details">
+                                <p><strong>Date:</strong> March 20-22, 2025</p>
+                                <p><strong>Location:</strong> Nagpur Art Gallery</p>
+                                <p><strong>Activities:</strong> Artisan showcases, workshops, craft sales</p>
+                            </div>
+                        </div>
+                        <!-- Add more grid items with data-event attribute and details -->
+                        
+                        
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nagpur Tourism. All rights reserved.</p>
+    </footer>
+    <script>
+        // scripts.js
+$(document).ready(function() {
+    $('.grid-item').click(function() {
+        $('.grid-item .details').fadeOut(200);
+        $(this).find('.details').fadeIn(200);
+    });
+});
+
+    </script>
+    <script src="/festivals.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Activities - Nagpur Tourism</title>
+    <link rel="stylesheet" href="adventure.css"> <!-- Additional CSS for adventure page -->
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="heritage.html">Heritage</a></li>
+                <li><a href="nature.html">Nature & Wildlife</a></li>
+                <li><a href="adventure.html">Adventure Activities</a></li>
+               <li><a href="festivals.html">Festivals & Events</a></li>
+                <li><a href="shopping.html">Shopping Destinations</a></li>
+                <li><a href="architecture.html">Architecture & Landmarks</a></li>
+                <li><a href="nightlife.html">Nightlife & Entertainment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- Main content section -->
+<main>
+    <div class="container">
+        <h1>Adventure Activities</h1>
+        <p>Discover the thrill and excitement of adventure activities in Nagpur. Whether you're an adrenaline junkie or a nature lover, Nagpur has something to offer for everyone. Explore the activities below and plan your next adventure!</p>
+        <div class="grid-container">
+            <div class="grid-item" onclick="showTrekkingModal()">
+                <div class="video-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="/images/Adventure/Trekking_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h2>Trekking</h2>
+                <p>Experience the scenic beauty and diverse terrain of Nagpur's trekking trails. From beginner-friendly paths to challenging hikes, there's a trail for every level.</p>
+                <a href="/trekking.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="grid-item">
+                <div class="video-container">
+                    <video id="wildlifeVideo" autoplay loop muted playsinline>
+                        <source src="/images/Adventure//wildlife safari 2_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h2>Wildlife Safari</h2>
+                <p>Embark on a thrilling wildlife safari and get up close with the region's exotic animals. Perfect for nature enthusiasts and photographers alike.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="grid-item">
+                <div class="video-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="/images/Adventure/Water_sports_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h2>Water Sports</h2>
+                <p>Enjoy an array of water sports including kayaking, boating, and jet skiing in Nagpur's pristine lakes and rivers.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="grid-item">
+                <div class="video-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="/images/Adventure/Paraglinding_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h2>Paragliding</h2>
+                <p>Soar high above the city with paragliding. Witness breathtaking views and feel the rush of flying.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="grid-item">
+                <div class="video-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="/images/Adventure/Camping_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h2>Camping</h2>
+                <p>Experience the outdoors with camping adventures in Nagpur's scenic locations. Sleep under the stars and connect with nature.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="grid-item">
+                <div class="video-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="/images/Adventure/Rock_climbling_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h2>Rock Climbing</h2>
+                <p>Challenge yourself with rock climbing adventures amidst Nagpur's rugged terrains. Suitable for climbers of all levels.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var video = document.getElementById('wildlifeVideo');
+            var button = document.getElementById('playPauseButton');
+    
+            button.addEventListener('click', function() {
+                if (video.paused) {
+                    video.play();
+                    button.classList.remove('paused');
+                    button.classList.add('playing');
+                    button.textContent = 'Pause';
+                } else {
+                    video.pause();
+                    button.classList.remove('playing');
+                    button.classList.add('paused');
+                    button.textContent = 'Play';
+                }
+            });
+    
+            video.addEventListener('play', function() {
+                button.classList.add('playing');
+                button.classList.remove('paused');
+                button.textContent = 'Pause';
+            });
+    
+            video.addEventListener('pause', function() {
+                button.classList.remove('playing');
+                button.classList.add('paused');
+                button.textContent = 'Play';
+            });
+        });
+
+        function showTrekkingModal() {
+            document.getElementById('trekkingModal').style.display = 'block';
+        }
+
+        function closeTrekkingModal() {
+            document.getElementById('trekkingModal').style.display = 'none';
+        }
+    </script>
+    
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Nagpur Tourism. All rights reserved.</p>
+    </footer>
+</body>
+</html>
