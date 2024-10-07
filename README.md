@@ -4,9 +4,9 @@
 <h2>Project Stack</h2>
 <p>The NagpurDarshan website is built using modern web development technologies for performance and scalability:</p>
 
-Frontend: HTML, CSS, JavaScript, React
-Backend: Node.js, Express.js
-Database: MongoDB
-Hosting & Cloud: Google Cloud, AWS
-Maps Integration: Google Maps API
-360-Degree Views: Third-party panoramic view API
+<p>Frontend: HTML, CSS, JavaScript, React</p>
+<p>Backend: Node.js, Express.js</p>
+<p>Database: MongoDB</p>
+<p>Hosting & Cloud: Google Cloud, AWS</p>
+<p>Maps Integration: Google Maps API</p>
+<p>360-Degree Views: Third-party panoramic view API</p>
