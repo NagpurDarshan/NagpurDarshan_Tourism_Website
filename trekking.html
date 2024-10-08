@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trekking in Nagpur - Nagpur Tourism</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #2980B9;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #1ABC9C;
+        }
+
+        /* Header and navigation styling (simplified for this example) */
+        header {
+            background-color: #2980B9;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #3498DB;
+            margin: 0;
+            border-top: 3px solid #2980B9;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            padding: 15px 20px;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #2980B9;
+        }
+
+        /* Main content styling */
+        main {
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        /* CSS styles for the page */
+        .grid-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .grid-item {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        .video-container {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .video-container video {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .grid-item h2 {
+            margin-top: 10px;
+        }
+
+        .grid-item p {
+            margin: 10px 0;
+        }
+
+        .learn-more {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2980B9;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer; /* Add cursor pointer */
+        }
+
+        .learn-more:hover {
+            background-color: #1ABC9C;
+        }
+
+        .details {
+            display: none; /* Initially hide details */
+            margin-top: 10px;
+        }
+
+        .details.show {
+            display: block; /* Show details when .show class is added */
+        }
+
+        /* Trekking points styling */
+        .trekking-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .trekking-points .point {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .trekking-points .point img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .trekking-points .point h3 {
+            margin-top: 10px;
+        }
+
+        .trekking-points .point p {
+            margin-bottom: 10px;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2980B9;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header section -->
+    <header>
+        <div class="header-content">
+            <h1>Nagpur Tourism</h1>
+            <p>Discover the natural wonders of Nagpur</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/heritage.html">Heritage</a></li>
+            <li><a href="nature.html">Nature & Wildlife</a></li>
+            <li><a href="adventure.html">Adventure Activities</a></li>
+            <li><a href="festivals.html">Festivals & Events</a></li>
+            <li><a href="shopping.html">Shopping Destinations</a></li>
+            <li><a href="architecture.html">Architecture & Landmarks</a></li>
+            <li><a href="nightlife.html">Nightlife & Entertainment</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content section -->
+    <main>
+        <section>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="video-container">
+                        <video autoplay loop muted playsinline>
+                            <source src="/images/Adventure/Trekking_video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h2>Trekking</h2>
+                    <p>Experience the scenic beauty and diverse terrain of Nagpur's trekking trails. From beginner-friendly paths to challenging hikes, there's a trail for every level.</p>
+                    <div class="learn-more" onclick="toggleDetails(this)">Learn More</div>
+                    <div class="details">
+                        <div class="trekking-points">
+                            <div class="point">
+                                <img src="/images/Adventure/trekking/Seminary_Hills.jpg" alt="Seminary Hills">
+                                <h3>Seminary Hills</h3>
+                                <p>Seminary Hills offers stunning trails with panoramic views of Nagpur. It's a popular spot for both beginners and experienced trekkers.</p>
+                                <p><strong>Opening Hours:</strong> Open daily from 6:00 AM to 6:00 PM</p>
+                                <p><strong>Entry Fees:</strong> Free</p>
+                            </div>
+                            <div class="point">
+                                <img src="/images/Adventure/trekking/sitabuldi-fort.jpg" alt="Sitabuldi Fort">
+                                <h3>Sitabuldi Fort</h3>
+                                <p>Located in the heart of Nagpur, Sitabuldi Fort provides historical charm along with trekking opportunities. Explore its rich history while enjoying the trekking trails.</p>
+                                <p><strong>Opening Hours:</strong> Open daily from 7:00 AM to 5:00 PM</p>
+                                <p><strong>Entry Fees:</strong> INR 20 per person</p>
+                            </div>
+                            <div class="point">
+                                <img src="/images/Adventure/trekking/ramtek-fort-temple.jpg" alt="Ramtek Fort Temple">
+                                <h3>Ramtek Fort Temple</h3>
+                                <p>About 50 km from Nagpur, Ramtek Fort Temple combines trekking with spiritual exploration. The trek to the fort offers serene surroundings and a glimpse into history.</p>
+                                <p><strong>Opening Hours:</strong> Open daily from 8:00 AM to 6:00 PM</p>
+                                <p><strong>Entry Fees:</strong> Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Nagpur Tourism. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for toggling details -->
+    <script>
+        function toggleDetails(button) {
+            const details = button.nextElementSibling;
+            details.classList.toggle('show');
+        }
+    </script>
+
+</body>
+</html>

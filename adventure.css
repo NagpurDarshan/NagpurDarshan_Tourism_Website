@@ -1,0 +1,133 @@
+ /* Reset default browser styles */
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #0f55eb;
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-height: 300px; /* Ensures a minimum height for the grid items */
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item img,
+.grid-item video {
+    width: 100%; /* Ensures images and videos take full width of their container */
+    height: auto; /* Allows images and videos to maintain their aspect ratio */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    max-height: 200px; /* Limits maximum height for images and videos */
+}
+
+.grid-item video {
+    max-width: 100%; /* Ensures videos take full width of their container */
+    height: 100%; /* Allows videos to maintain aspect ratio */
+}
+
+.video-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.grid-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.learn-more {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #0056b3;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}

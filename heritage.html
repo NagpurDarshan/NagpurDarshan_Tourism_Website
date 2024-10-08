@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagpur Heritage Sites</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
+    <link rel="stylesheet" href="/heritage.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="heritage.html">Heritage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nature.html">Nature & Wildlife</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="adventure.html">Adventure</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="festivals.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shopping.html">Shopping Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="architecture.html">Architecture</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nightlife.html">Entertainment</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Explore Nagpur's Heritage Sites in 360 Degrees</h1>
+
+        <!-- Grid container for heritage sites -->
+        <div class="grid-container">
+            <!-- Site 1: Deekshabhoomi -->
+            <div class="grid-item">
+                <a href="#" onclick="openModal('modal-deekshabhoomi')">
+                    <div class="image-container">
+                        <img src="/images/heritage/deekshabhoomi.jpeg" alt="Deekshabhoomi">
+                        <div class="overlay">
+                            <h3>Deekshabhoomi</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Modal for Deekshabhoomi -->
+            <div id="modal-deekshabhoomi" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-deekshabhoomi')">&times;</span>
+                    <h2>Deekshabhoomi</h2>
+                    <div id="panorama-deekshabhoomi" style="width: 100%; height: 500px;"></div>
+                    <p>Deekshabhoomi is a sacred mo.ment where Dr. B.R. Ambedkar, the architect of the Indian Constitution, converted to Buddhism along with thousands of followers. It is a symbol of social and religious transformation and holds immense significance for followers of Buddhism worldwide.</p>
+                </div>
+            </div>
+
+            <!-- Site 2: Futala Lake -->
+            <div class="grid-item">
+                <a href="#" onclick="openModal('modal-Futala')">
+                    <div class="image-container">
+                        <img src="/images/heritage/Futala_Lake.jpg" alt="Futala_Lake">
+                        <div class="overlay">
+                            <h3>Futala Lake</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Modal for Futala Lake -->
+            <div id="modal-Futala" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-Futala')">&times;</span>
+                    <h2>Sitabuldi Fort</h2>
+                    <div id="panorama-Futala" style="width: 100%; height: 500px;"></div>
+                    <p>Sitabuldi Fort is a historic fort located in Nagpur. It is known for its strategic importance and the battles fought here during the Maratha era. The fort offers a panoramic view of the city and is a popular tourist attraction.</p>
+                </div>
+            </div>
+
+            <!-- Site 3: Ramtek Temple -->
+            <div class="grid-item">
+                <a href="#" onclick="openModal('modal-ramtek')">
+                    <div class="image-container">
+                        <img src="/images/heritage/Khindsi Lake, Ramtek.jpeg" alt="Ramtek Temple">
+                        <div class="overlay">
+                            <h3>Ramtek Temple</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Modal for Ramtek Temple -->
+            <div id="modal-ramtek" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-ramtek')">&times;</span>
+                    <h2>Ramtek Temple</h2>
+                    <div id="panorama-ramtek" style="width: 100%; height: 500px;"></div>
+                    <p>Ramtek Temple is a famous Hindu temple located on a hilltop near Nagpur. It is dedicated to Lord Rama and offers stunning views of the surrounding landscape. The temple is an important pilgrimage site and a popular tourist destination.</p>
+                </div>
+            </div>
+
+            <!-- Site 4: Ambazari Lake -->
+            <div class="grid-item">
+                <a href="#" onclick="openModal('modal-ambazari')">
+                    <div class="image-container">
+                        <img src="/images/heritage/ambazari lake.jpg" alt="Ambazari Lake">
+                        <div class="overlay">
+                            <h3>Ambazari Lake</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Modal for Ambazari Lake -->
+            <div id="modal-ambazari" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-ambazari')">&times;</span>
+                    <h2>Ambazari Lake</h2>
+                    <div id="panorama-ambazari" style="width: 100%; height: 500px;"></div>
+                    <p>Ambazari Lake is one of the largest lakes in Nagpur, known for its scenic beauty and recreational activities. The lake is surrounded by lush greenery and is a popular spot for picnics and boating.</p>
+                </div>
+            </div>
+
+            <!-- Site 5: Lata Mangeshkar Musical Garden -->
+            <div class="grid-item">
+                <a href="#" onclick="openModal('modal-Lata')">
+                    <div class="image-container">
+                        <img src="/images/heritage/Lata Mangeshkar.jpg" alt="Lata Mangeshkar">
+                        <div class="overlay">
+                            <h3>Lata Mangeshkar Musical Garden</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Modal for Lata Mangeshkar Musical Garden -->
+            <div id="modal-Lata" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-Lata')">&times;</span>
+                    <h2>Lata Mangeshkar Musical Garden</h2>
+                    <div id="panorama-Lata" style="width: 100%; height: 500px;"></div>
+                </div>
+            </div>
+
+            <!-- Site 6: Dragon Palace Buddhist Temple -->
+            <div class="grid-item">
+                <a href="#" onclick="openModal('modal-Dragon')">
+                    <div class="image-container">
+                        <img src="/images/heritage/Dragon_Palace_Temple.jpg" alt="Dragon Palace">
+                        <div class="overlay">
+                            <h3>Dragon Palace Buddhist Temple</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Modal for Lata Mangeshkar Musical Garden -->
+            <div id="modal-Dragon" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-Dragon')">&times;</span>
+                    <h2>Dragon Palace Temple</h2>
+                    <div id="panorama-Dragon" style="width: 100%; height: 500px;"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <p>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.73388040391!2d79.11429457510789!3d21.123173280549857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c14f7a10d4d9%3A0x609b84f3a9159c82!2sThe%20Space%20Element!5e0!3m2!1sen!2sin!4v1723449843320!5m2!1sen!2sin" 
+                width="1600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </p>
+    
+    <button onclick="getLocation()">Show Nearby Tourist Places</button>
+    
+    <script>
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+    
+    function showPosition(position) {
+        var lat = position.coords.latitude;
+        var lon = position.coords.longitude;
+    
+        // Updating the iframe src with user location
+        var mapFrame = document.getElementById("map");
+        mapFrame.src = `https://www.google.com/maps/embed/v1/search?key=YOUR_GOOGLE_MAPS_API_KEY&q=tourist+attractions&center=${lat},${lon}&zoom=12`;
+    }
+    
+    function showError(error) {
+        switch(error.code) {
+            case error.PERMISSION_DENIED:
+                alert("User denied the request for Geolocation.");
+                break;
+            case error.POSITION_UNAVAILABLE:
+                alert("Location information is unavailable.");
+                break;
+            case error.TIMEOUT:
+                alert("The request to get user location timed out.");
+                break;
+            case error.UNKNOWN_ERROR:
+                alert("An unknown error occurred.");
+                break;
+        }
+    }
+    </script>
+    
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+            if (modalId === 'modal-deekshabhoomi') {
+                pannellum.viewer('panorama-deekshabhoomi', {
+                    "type": "equirectangular",
+                    "panorama": "/images/heritage/360/Street View 360 Deekshabhumi.jpg",
+                    "autoLoad": true,
+                    "autoRotate": -2
+                });
+            } else if (modalId === 'modal-Futala') {
+                pannellum.viewer('panorama-Futala', {
+                    "type": "equirectangular",
+                    "panorama": "/images/heritage/360/Futala Lake.jpg",
+                    "autoLoad": true,
+                    "autoRotate": -2
+                });
+            } else if (modalId === 'modal-ramtek') {
+                pannellum.viewer('panorama-ramtek', {
+                    "type": "equirectangular",
+                    "panorama": "/images/heritage/360/Khindsi Lake, Ramtek.jpg",
+                    "autoLoad": true,
+                    "autoRotate": -2
+                });
+            } else if (modalId === 'modal-ambazari') {
+                pannellum.viewer('panorama-ambazari', {
+                    "type": "equirectangular",
+                    "panorama": "/images/heritage/360/Ambasari Lake.jpg",
+                    "autoLoad": true,
+                    "autoRotate": -2
+                });
+            }else if (modalId === 'modal-Lata') {
+                pannellum.viewer('panorama-Lata', {
+                    "type": "equirectangular",
+                    "panorama": "/images/heritage/360/Lata Mangeshkar.jpg",
+                    "autoLoad": true,
+                    "autoRotate": -2
+                });
+            }else if (modalId === 'modal-Dragon') {
+                pannellum.viewer('panorama-Dragon', {
+                    "type": "equirectangular",
+                    "panorama": "/images/heritage/360/Dragon palace.jpg",
+                    "autoLoad": true,
+                    "autoRotate": -2
+                });
+            }
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+    </script>
+    <script>
+       
+        // Initialize Google Map
+        function initMap() {
+            var nagpur = { lat: 21.1458, lng: 79.0882 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: nagpur
+            });
+            var marker = new google.maps.Marker({
+                position: nagpur,
+                map: map,
+                title: 'Nagpur, Maharashtra, India'
+            });
+        }
+
+        // Load Google Maps API script
+        function loadScript() {
+            var script = document.createElement('script');
+            script.src = 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap';
+            script.defer = true;
+            script.async = true;
+            document.head.appendChild(script);
+        }
+
+        // Call loadScript function when the page is loaded
+        window.onload = loadScript;
+
+        // Function to display attraction details
+        function showAttraction(id) {
+            var attractions = document.querySelectorAll('.attraction');
+            attractions.forEach(function (attraction) {
+                attraction.classList.add('hidden');
+            });
+            var selectedAttraction = document.getElementById(id);
+            if (selectedAttraction) {
+                selectedAttraction.classList.remove('hidden');
+                selectedAttraction.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
